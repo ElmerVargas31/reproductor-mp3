@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elmer Vargas Salazar">
+    <meta name="description" content="Reproductor de música MP3">
+    <meta name="keywords" content="Reproductor, MP3, música">
+    <!--Título de Pestaña-->
+    <title>Reproductor MP3</title>
+    <!--Ícono de Pestaña-->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!--Íconos Vectoriales-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Inicio del Reproductor-->
+    <div class="container">
+
+        <!--Datos de la Canción-->
+        <div id="datos_musica">
+            <p id="nombre"></p>
+            <p id="artista"></p>
+        </div>
+
+        <!--Imagen de Álbum-->
+        <div id="album">
+            <img id="img_alb">
+        </div>
+
+        <!--Mensaje de confirmación del volúmen en el reproductor-->
+        <div id="mensaje"></div>
+
+        <!--Volúmen de Audio-->
+        <div id="volumen">
+            <a id="low" title="Baja el volúmen"><i class="fas fa-minus fa-2x"></i></a>
+            <a id="high" title="Sube el volúmen"><i class="fas fa-plus fa-2x"></i></a>
+        </div>
+
+        <!--Controles-->
+        <div id="controles">
+            <a id="prev" title="Anterior"><i class="fas fa-step-backward fa-2x"></i></a>
+            <a id="play" title="Reproduce - Pausa"><i class="fas fa-play fa-3x"></i></a>
+            <a id="next" title="Siguiente"><i class="fas fa-step-forward fa-2x"></i></a>        
+        </div>
+
+        <!--Audio-->
+        <audio id="audio"></audio>
+
+    </div><!--Fin del Reproductor-->
+
+    <!--JQuery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!--Script JavaScript-->
+    <script src="js/player.js"></script>
+</body>
+</html>

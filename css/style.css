@@ -1,0 +1,87 @@
+/*Reset CSS*/
+*{
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+}
+
+/*Estilos Generales*/
+#datos_musica,#volumen,#contenedor_tiempo,#controles{
+    display: flex;
+}
+#low,#high,#prev,#play,#next{
+    width: 45px; height: 45px; display: flex;
+    justify-content: center; align-items: center;
+    border-radius: 50%; cursor: pointer; 
+    color: #35799b; background-color: #ffffffcc;
+    box-shadow: 0 0 6px 2px #808080;
+}
+#low:active,#high:active,#prev:active,
+#play:active,#next:active,#random:active{
+    background-color: #d6d6d6;
+}
+body{
+    background-image: url(../img/fondo.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*=====REPRODUCTOR DE MÚSICA=====*/
+.container{
+    height: 490px; width: 325px; margin: 65px auto; border-radius: 10%;
+    background: linear-gradient(to top, #b9b5be, #745ab1);
+    border: 8px solid #2c2c2c; color: #fff; user-select: none;
+}
+
+/*Datos de la Canción*/
+#datos_musica{
+    height: 30px; flex-flow: column; 
+    align-items: center; margin-top: 20px;
+}
+#nombre{
+    font-size: 17px; margin-bottom: 8px;
+}
+#artista{
+    color: #e0e0e0;
+}
+
+/*Álbum*/
+#album{
+    width: 200px; height: 200px; margin: 30px auto; overflow: hidden; 
+    border-radius: 50%; border: 5px solid #2c2c2c;
+}
+#img_alb{
+     width: 100%; height: 100%;
+}
+
+/*Bloque donde se muestra un mensaje con el volúmen de audio*/
+#mensaje{
+    background: #202020; color:#95cfec; 
+    font-weight: bold; margin-top: -10px; 
+    margin-left: 50%; transform: translateX(-50%); 
+    border-radius: 5px; text-align: center; padding: 4px;
+}
+
+/*Volúmen de Música*/
+#volumen{
+    justify-content: center; margin-bottom: 5px;
+    height: 50px; margin-top: 15px; 
+}
+#volumen a{
+    margin: 4px 15px;
+}
+#low,#high{
+    width: 35px; height: 35px;
+}
+
+/*Controles del Reproductor*/
+#controles{
+    align-items: center; justify-content: space-evenly;
+    margin-top: 5px; 
+}
+#play{
+    padding-left: 6px; 
+    width: 65px; height: 65px;
+}
